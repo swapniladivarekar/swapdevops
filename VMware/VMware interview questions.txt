@@ -1,0 +1,49 @@
+1. What is VMware?
+
+- Its a company. It does virtualization platforms.
+
+
+2. What is Hypervisor?
+
+- Hypervisor is a software that can install virtual machines on your bear metal or physical server. i.e. Hypervisor creates virtual machine for you.
+- VMware, Xen are popular hypervisors. Virtual machine is nothing but logical isolation.
+
+
+3. What are the components of VMware?
+
+- VMware ESXi: It is the hypervisor.
+
+- Vcenter: Vcenter centrally manage your all VMware ESXi hosts.
+
+- Vsphere: It is a big package. Vspehere is webclient(login by using web browser) through which you can manage your Vcenter and eventually VMware ESXi environment.
+It provides centralized management interface.
+
+
+4. What is Vmotion?
+
+- Migrating/copying the virtual machines from one host to another when virtual machine is powered on. It is called Vmotion.
+
+
+5. How many VMs can run on one ESXi host?
+
+- It depends on resources of ESXi host. How much CPU, RAM, Storage available on that ESXi host.
+
+6. What is DRS?
+
+- It is technology in the Vcenter that allows you to automate the resources between your vms. e.g if ESXi host 1 is fully or highly utilized then DRS will automatically copy/migrate the some VMs to ESXi host 2 by using Vmotion technique since VMs getting migrated in powered on state.
+
+7. What is VMware HA(High Availability)?
+
+- VMware HA allows you to build the VMs on another host if one host goes down.
+
+8. What is VMware workstation.
+
+- It is type-2 hypervisor to install on your desktop.
+
+9. What is datastore?
+
+- It is a storage in VMware environment. Actually it is physical storage on which ESXi host is installed. And top of ESXi host you creates virtual machines. Physical storage means iscsi, NFS, NAS, SAN etc.
+
+10. What is SRM (site recovery management)?
+
+- It is a disaster recovery technology.
